@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.flexiadaptertest.model.OrderProductParseModel"/>
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/labelDescription"
+            style="@style/ListRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="left"
+            android:text="Description"/>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <com.example.flexiadaptertest.util.KeyboardLessEditText
+                android:id="@+id/textQuantity"
+                style="@style/KeyboardLessEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:ems="3"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <com.example.flexiadaptertest.util.KeyboardLessEditText
+                android:id="@+id/textRet"
+                style="@style/KeyboardLessEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ems="3"
+                android:inputType="numberSigned"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelW1"
+            style="@style/ListRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="100"/>
+
+        <TextView
+            android:id="@+id/labelW2"
+            style="@style/ListRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="100"/>
+
+        <TextView
+            android:id="@+id/labelW3"
+            style="@style/ListRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="100"/>
+
+        <TextView
+            android:id="@+id/labelW4"
+            style="@style/ListRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="100"/>
+
+    </LinearLayout>
+
+</layout>

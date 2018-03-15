@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp">
+
+            <TextView
+                style="@style/ListHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:gravity="left"
+                android:text="Description"/>
+
+            <Spinner
+                android:id="@+id/spinnerDay"
+                android:layout_width="140dp"
+                android:focusable="false"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/ListHeader"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:text="Qty"/>
+
+            <TextView
+                style="@style/ListHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:padding="4dp"
+                android:text="Ret"/>
+
+            <TextView
+                style="@style/ListHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="W1"/>
+
+            <TextView
+                style="@style/ListHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="W2"/>
+
+            <TextView
+                style="@style/ListHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="W3"/>
+
+            <TextView
+                style="@style/ListHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="W4"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider.Vertical"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <!--android:paddingTop="48dp"-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:clipToPadding="true"
+                android:scrollbarSize="5dp"
+                android:scrollbars="vertical"/>
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                layout="@layout/fast_scroller"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

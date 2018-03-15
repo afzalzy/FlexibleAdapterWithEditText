@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.flexiadaptertest.model.CategoryParseModel"/>
+        <variable
+            name="position"
+            type="int"/>
+        <variable
+            name="handler"
+            type="com.example.flexiadaptertest.listener.FilterOptionSelectListener"/>
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:clickable="true"
+        android:background="?attr/themeSelector"
+        android:orientation="horizontal"
+        android:paddingEnd="8dp"
+        android:onClick="@{()->handler.onFilterOptionClicked(position, item)}"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/labelHeaderName"
+            style="@style/ListRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.catName}"
+            android:textColor="@color/black"
+            android:gravity="left"/>
+
+    </LinearLayout>
+</layout>

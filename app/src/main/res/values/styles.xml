@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+
+        <item name="colorPrimary">@color/redColorPrimary</item>
+        <item name="colorPrimaryDark">@color/redColorPrimaryDark</item>
+        <item name="colorAccent">@color/redColorAccent</item>
+        <item name="themeFocus">@color/redColorFocus</item>
+        <item name="themeButton1">@drawable/red_button1_selector</item>
+        <item name="themeDialog">@drawable/red_dialog_selector</item>
+        <item name="themeRadioButtonColor">@color/redColorPrimaryDark</item>
+        <item name="themeEditText1">@drawable/red_edittext1_selector</item>
+
+        <item name="colorButtonNormal">@color/redColorPrimary</item>
+        <item name="buttonBarNegativeButtonStyle">@drawable/red_button1_selector</item>
+        <item name="buttonBarPositiveButtonStyle">@drawable/red_button1_selector</item>
+        <item name="themeSelector">@drawable/row_selector_red</item>
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
+        <item name="android:popupMenuStyle">@style/popupMenuStyle</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+        <item name="android:listDivider">@drawable/divider_red</item>
+    </style>
+
+
+    <style name="popupMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:textColor">@color/white</item>
+
+        <!--<item name="android:itemBackground">?themeButton1</item>-->
+        <!--<item name="android:popupBackground">@color/redColorAccent</item>-->
+        <item name="android:colorBackground">?attr/colorPrimary</item>
+    </style>
+    <style name="myPopupMenuTextAppearanceLarge" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ListHeader" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="Divider" >
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+
+    <style name="Divider.Vertical" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="ListRow" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="KeyboardLessEditText" parent="@android:style/Widget.EditText">
+        <item name="android:textColorHighlight">@color/white</item>
+        <item name="android:background">?themeEditText1</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textCursorDrawable">@drawable/white_cursor</item>
+
+    </style>
+
+
+</resources>

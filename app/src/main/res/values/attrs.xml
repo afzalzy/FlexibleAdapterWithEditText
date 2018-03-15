@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="themeDialog" format="reference" />
+    <attr name="themeButton1" format="reference" />
+    <attr name="themeRadioButtonColor" format="color" />
+    <attr name="themeFocus" format="color" />
+    <attr name="themeEditText1" format="reference" />
+    <attr name="themeSelector" format="reference" />
+
+    <attr name="colorForeground" />
+</resources>

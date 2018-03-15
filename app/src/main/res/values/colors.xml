@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="black_trn">#99000000</color>
+
+
+    <!--<color name="redColorPrimaryDark">#D32F2F</color>-->
+    <color name="redColorPrimaryDark">#a60000</color>
+    <!--<color name="redColorPrimary">#F44336</color>-->
+    <color name="redColorPrimary">#e02327</color>
+    <color name="redColorAccent">#FFCDD2</color>
+    <color name="redColorFocus">#E57373</color>
+    <!--#F44336 material red-->
+    <!--ed1c24 logo red-->
+
+
+</resources>
